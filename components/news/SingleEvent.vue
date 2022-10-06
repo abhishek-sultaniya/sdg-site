@@ -1,6 +1,8 @@
 <template>
   <div class="event">
-    <h3>{{ event.title }}</h3>
+    <nuxt-link :to="`/news/${event.id}`">
+      <h3>{{ event.title }}</h3>
+    </nuxt-link>
     <h3>Location: {{ event.location }}</h3>
     <h3>Date RSVP: {{ event.RSVP }}</h3>
     <p>{{ snippet }}</p>
@@ -15,6 +17,7 @@ export default defineComponent({
     event: {
       type: Object,
       default: () => ({
+        id: 1,
         title: 'Event Title',
         location: 'India',
         RSVP: 'Date',
