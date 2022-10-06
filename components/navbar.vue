@@ -97,6 +97,7 @@ export default defineComponent({
         { name: 'Home', url: '/', prefetch: false },
         { name: 'Blogs', url: '/blog', prefetch: false },
         { name: 'Team', url: '/portfolio', prefetch: false },
+        { name: 'News', url: '/news', prefetch: true },
         { name: 'About Us', url: '/aboutus', prefetch: true },
         { name: 'Contact Us', url: '/contact', prefetch: true }
       ]
