@@ -21,7 +21,6 @@ export default defineComponent({
   setup() {
     const events = ref([]);
     const res = collection(projectFirestore, 'posts');
-    console.log(res); // eslint-disable-line
     getDocs(res).then((snapshot) => {
       const docs = [];
       snapshot.docs.forEach((doc) => {
