@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <h1>News/events</h1>
+    <site-hero title="Events" subtitle="" image="" />
     <div v-if="events.length">
       <EventList :events="events" />
     </div>
