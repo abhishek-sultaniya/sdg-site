@@ -18,6 +18,7 @@ export default defineComponent({
         title: 'Event Title',
         location: 'India',
         RSVP: 'Date',
+        body: 'This is some long description of the event',
       }),
     },
   },
